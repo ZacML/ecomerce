@@ -1,13 +1,20 @@
 package com.ecomerce.poo.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "TBPRODUTO")
 
 public class ProdutoModel {
 
-    @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CDPRODUTO")
     private int cdProduto;
     @Column(name = "NMPRODUTO")
