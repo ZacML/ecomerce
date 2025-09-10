@@ -5,16 +5,17 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 public record FuncionarioDto(
-        @NotBlank(message = "Não é possivel cadastrar o funcionario sem nome!")
+        @NotBlank@NotNull(message = "O nome do funcionário precisa ser preenchido!")
         String nmFuncionario,
 
-        @NotBlank(message = "Não é possível cadastrar funcionario sem telefone!")
+        @NotBlank(message = "O número do telegone precisa ser preenchido!")
         String tlFuncionario,
 
-        @NotNull(message = "Não é possivel cadastrar o funcionarui com o campo vazio!")
-        @DecimalMin(value = "0.01",
+        @NotNull(message = "O salario precisa ser preenchido" +
+                "!")
+        @DecimalMin(value = "1518.0",
                 message = "Não é possivel cadastrar o funcionário com salário abaixo de 0.01!")
-        double vlProduto
+        Double salFuncionario
 ) {
 }
 

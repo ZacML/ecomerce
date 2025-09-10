@@ -16,11 +16,11 @@ public class FuncionarioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CDFUNCIONARIO")
-    private int cdFuncionario;
+    private Long cdFuncionario;
     @Column(name = "NMFUNCIONARIO")
     private String nmFuncionario;
     @Column(name = "TLFUNCIONARIO")
     private String tlFuncionario;
     @Column(name = "SALFUNCIONARIO")
-    private double salFuncionario;
+    private Double salFuncionario;
 }

@@ -17,15 +17,15 @@ public class ClienteModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CDCLIENTE")
-    private int cdCliente;
+    private Long cdCliente;
     @Column(name = "NMFUNCIONARIO")
-    private String nmFuncionário;
+    private String nmCliente;
     @Column(name = "TLCLIENTE")
     private String tlCliente;
     @Column(name = "IDADECLIENTE")
-    private int idadeCliente;
+    private Integer idadeCliente;
     @Column(name = "ALTURACLIENTE")
-    private int alturaCliente;
+    private Integer alturaCliente;
     @Column(name = "ENDERECOCLIENTE")
     private String enderecoCliente;
 
